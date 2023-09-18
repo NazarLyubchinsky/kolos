@@ -1,0 +1,52 @@
+.servers {
+	padding: 0 220px;
+	margin-top: 200px;
+	text-align: center;
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		background: radial-gradient(circle, rgb(23, 127, 250) 0%, rgb(19, 41, 67) 100%);
+		width: 439px;
+		height: 439px;
+		border-radius: 50%;
+		z-index: -1;
+		filter: blur(110px);
+	}
+	&__title {
+		position: relative;
+		font-size: 40px;
+		font-weight: 900;
+
+		&::after {
+			content: "НАШІ СЕРВЕРИ";
+			font-family: "Gothic A1", Helvetica;
+			text-align: center;
+			font-size: 96px;
+			font-weight: 900;
+			color: transparent;
+			position: absolute;
+			top: 0px;
+			width: 100%;
+			left: 50%;
+			transform: translate(-50%);
+			z-index: -1;
+			-webkit-text-stroke: 1px #ffffff1a;
+		}
+	}
+	&__wrapper {
+		margin-top: 42px;
+		display: flex;
+		gap: 19px;
+		flex-wrap: wrap;
+	}
+	&__bottom {
+		display: flex;
+		justify-content: center;
+		gap: 90px;
+		margin-top: 80px;
+	}
+}

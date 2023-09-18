@@ -1,0 +1,67 @@
+.main {
+	margin-top: 80px;
+	&__wrapper {
+		display: flex;
+		position: relative;
+	}
+	&__left {
+		position: relative;
+		width: 50%;
+		z-index: 1;
+		padding-top: 100px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 40px;
+		&_title {
+			font-size: 60px;
+			font-weight: 400;
+			line-height: 76px;
+			letter-spacing: 0.9px;
+		}
+		&_text {
+			color: var(--custom-grey);
+			font-size: 15px;
+			font-weight: 400;
+		}
+		&_btn {
+			color: var(--custom-blue);
+			font-size: 14px;
+			font-weight: 700;
+			letter-spacing: 0.21px;
+			white-space: nowrap;
+			background-color: var(--custom-light-blue);
+			padding: 23px 73px;
+			border-radius: 19px;
+			cursor: pointer;
+			transition: all 0.3s ease-in;
+			&:hover {
+				color: var(--custom-light-blue);
+				background-color: var(--custom-blue);
+			}
+		}
+	}
+	// &__rigth {
+	// 	background-repeat: no-repeat;
+	// 	background-size: contain;
+	// 	height: 587px;
+	// 	width: 1000px;
+	// }
+	&__right {
+		background: url("../../../assets/Home/Main/bg__rigth.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 587px;
+		width: 1000px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		&::after {
+			content: url("../../../assets/Home/Main/fon__ellipse.svg");
+			position: absolute;
+			right: 0;
+			top: -50px;
+			z-index: -1;
+		}
+	}
+}
