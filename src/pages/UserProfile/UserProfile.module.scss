@@ -1,0 +1,24 @@
+.profile {
+	margin-top: 140px;
+	&__wrapper {
+		margin-top: 200px;
+		margin-right: 100px;
+		display: flex;
+		justify-content: space-between;
+		&_list {
+			width: 85%;
+			display: flex;
+			column-gap: 170px;
+			.list__left {
+				display: flex;
+				flex-direction: column;
+				row-gap: 16px;
+			}
+			.list__right {
+				&_item {
+					min-height: 284px;
+				}
+			}
+		}
+	}
+}

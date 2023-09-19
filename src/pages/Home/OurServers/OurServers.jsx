@@ -1,11 +1,12 @@
 import React from 'react'
+import Title from '../../../components/Title/Title'
 import OurServer from './OurServer/OurServer'
 import s from './ourServers.module.scss'
 
 const OurServers = () => {
 	return (
 		<div className={s.servers}>
-			<h2 className={s.servers__title}>НАШІ СЕРВЕРИ</h2>
+			<Title title={'НАШІ СЕРВЕРИ'} />
 			<div className={s.servers__wrapper}>
 				<OurServer
 					number={1}

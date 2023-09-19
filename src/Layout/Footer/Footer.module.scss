@@ -1,0 +1,32 @@
+.footer {
+	margin-top: 144px;
+	height: 176px;
+	background-color: #000711;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 75px;
+	&__img {
+		cursor: pointer;
+		width: 169px;
+		opacity: 0.4;
+		transition: opacity .2s ease-in;
+		&:hover{
+			opacity: 0.9;
+		}
+	}
+	&__list {
+		display: flex;
+		column-gap: 60px;
+	}
+	&__item {
+		cursor: pointer;
+		color: var(--custom-black-blue);
+		font-size: 20px;
+		font-weight: 400;
+		transition: color .2s ease-in;
+		&:hover{
+			color: var(--custom-dark-blue);
+		}
+	}
+}

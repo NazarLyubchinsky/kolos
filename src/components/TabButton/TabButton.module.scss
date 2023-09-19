@@ -1,0 +1,19 @@
+.tab {
+	cursor: pointer;
+	background-color: var(--custom-black);
+	border: 1px solid transparent;
+	border-radius: 18px;
+	height: 42px;
+	min-width: 334px;
+	justify-content: flex-start !important;
+	padding: 12px 0 12px 21px;
+	transition: background 0.3s ease-in;
+	&:hover {
+		background: var(--custom-black-blue);
+	}
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+	}
+}
