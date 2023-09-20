@@ -1,0 +1,60 @@
+.donate {
+	margin-top: 140px;
+	&__wrapper {
+		margin-top: 64px;
+		display: flex;
+		column-gap: 74px;
+		&_left {
+			font-size: 20px;
+			line-height: 20px;
+			.text {
+				font-size: 20px;
+				font-weight: 400;
+			}
+
+			.textColor {
+				color: var(--custom-blue);
+				font-weight: 700;
+			}
+
+			.list {
+				&__item {
+					margin-left: 16px;
+					list-style: disc;
+					font-size: 16px;
+				}
+			}
+
+			.bottom {
+				font-size: 16px;
+				font-weight: 700;
+			}
+		}
+
+		&_center {
+			width: 25%;
+			display: flex;
+			flex-direction: column;
+			gap: 21px;
+			.button {
+				margin-top: 113px;
+				background-color: var(--custom-blue);
+				border-radius: 15px;
+				height: 52px;
+			}
+			.agree {
+				text-align: center;
+				font-size: 10px;
+				font-weight: 400;
+				&__color {
+					cursor: pointer;
+					color: var(--custom-blue);
+					transition: opacity .2s ease-in;
+					&:hover {
+						opacity: 0.6;
+					}
+				}
+			}
+		}
+	}
+}

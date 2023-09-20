@@ -18,7 +18,7 @@ const Header = () => {
 						<ul className={s.list}>
 							<li className={s.item}>Головна</li>
 							<li className={s.item}>Форум</li>
-							<li className={s.item}>Донат</li>
+							<Link to='donate'>	<li className={s.item}>Донат</li></Link>
 						</ul>
 						<Link to='/profile' className={s.btn}>Особистий кабінет</Link>
 					</div>

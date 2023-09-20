@@ -1,0 +1,23 @@
+.menu {
+	background-color: #01040866;
+	border: 1px solid;
+	border-color: #318fff;
+	border-radius: 15px;
+	&__button {
+		padding: 17px 24px;
+		width: 100%;
+		text-align: start;
+		cursor: pointer;
+		&_row {
+			display: flex !important;
+			justify-content: space-between !important;
+		}
+	}
+}
+.rotate__up {
+	transform: rotate(180deg);
+ }
+ 
+ .rotate__down {
+	transform: rotate(0deg);
+ }
